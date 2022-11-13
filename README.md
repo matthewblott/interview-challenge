@@ -46,3 +46,9 @@ Calculate the compound decrease of a value for a given interest rate for a given
 This wasn't clear and no separate function is provided. If a negative interest rate is provided as an argument for the `Functions.CalculateCompoundInterest` function above then the correct value is calculated.
 
 ## SQL Test
+
+See the [test.sql](test.sql) file.
+
+## Maths Test
+
+See the [maths.md](maths.md) file.
