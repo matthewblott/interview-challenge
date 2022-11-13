@@ -45,9 +45,9 @@ group by
 -- Either show the data that should be included in the table or, preferably, write the SQL scripts to create and populate the table.
 
 create table tblTutorSubject (
-	tutor	integer not null,
-	subject	integer not null,
-	unique(tutor, subject)
+  tutor integer not null,
+  subject integer not null,
+  unique(tutor, subject)
 )
 
 insert into tblTutorSubject(tutor, subject) values (1, 2);
@@ -143,8 +143,8 @@ order by
 delete
   r
 from
-	tblTestResults r join
-	tblSubject s on r.subject = s.idx
+  tblTestResults r join
+  tblSubject s on r.subject = s.idx
 where
   r.percentageScore < 40 and
   s.title = 'Maths'
@@ -153,13 +153,13 @@ where
 -- Order by average percentage score descending.
 
 select
-	s.title,
-	avg(r.percentageScore) score
+  s.title,
+  avg(r.percentageScore) score
 from
-	tblTestResults r join
-	tblSubject s on r.subject = s.idx
-  group by
-    s.title
+  tblTestResults r join
+  tblSubject s on r.subject = s.idx
+group by
+  s.title
 order by
   score desc
 
