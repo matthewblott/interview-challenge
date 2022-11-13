@@ -115,11 +115,6 @@ public static class Functions
       {
         var x = i * j;
 
-        if (x == 237)
-        {
-          Console.WriteLine();
-        }
-        
         if(x == number && i == j)
         {
           return i;
